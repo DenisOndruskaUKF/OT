@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.ukf.ot2.HelloController">
+   <children>
+      <HBox layoutX="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="203.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#premen" text="Velke" />
+                  <Button mnemonicParsing="false" onAction="#premen" text="Male" />
+                  <Button mnemonicParsing="false" onAction="#premen" text="Pocet znakov" />
+                  <Button mnemonicParsing="false" onAction="#premen" text="Prve velke pismeno kazdeho slova" />
+                  <Button mnemonicParsing="false" onAction="#premen" text="Pocet slov" />
+                  <Button mnemonicParsing="false" onAction="#premen" text="Obrat text" />
+                  <Button mnemonicParsing="false" onAction="#premen" text="vymaz" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="399.0">
+               <children>
+                  <TextField fx:id="text" promptText="Zadaj Text" />
+                  <Label fx:id="vysledok" text="Vysledok" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>
