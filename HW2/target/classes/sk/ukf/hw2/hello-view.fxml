@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="root" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.ukf.hw2.HelloController">
+    <children>
+        <Button layoutX="200.0" layoutY="461.0" mnemonicParsing="false" onAction="#handleButton" text="Zmena módu" />
+    </children>
+</Pane>
