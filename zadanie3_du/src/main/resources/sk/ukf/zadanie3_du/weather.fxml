@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sk.ukf.zadanie3_du.WeatherController"
+            prefWidth="900" prefHeight="600">
+
+    <center>
+        <Pane fx:id="canvas" style="-fx-background-color: #243447;"/>
+    </center>
+
+    <bottom>
+        <FlowPane hgap="8" vgap="8" alignment="CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Button text="Pridať oblak"     onAction="#onAddCloud"/>
+            <Button text="Pridať kvapku"    onAction="#onAddRaindrop"/>
+            <Button text="Pridať vločku"    onAction="#onAddSnowflake"/>
+
+            <Separator orientation="VERTICAL"/>
+
+            <Button fx:id="stopRainButton" text="Zastaviť dážď" onAction="#onToggleRain"/>
+            <Button text="Oblaky na modro"  onAction="#onCloudsBlue"/>
+            <Button text="Všetko o 20 px doľava" onAction="#onShiftLeft"/>
+        </FlowPane>
+    </bottom>
+</BorderPane>
